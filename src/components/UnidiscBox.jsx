@@ -246,7 +246,7 @@ const UnidiscBox = ({ onClose, isFullPage }) => {
                           onClick={() => readMessage(message.content)}
                           title="Read message aloud"
                         >
-                          🔊 Read
+                          🔊
                         </button>
                       )}
                     </div>

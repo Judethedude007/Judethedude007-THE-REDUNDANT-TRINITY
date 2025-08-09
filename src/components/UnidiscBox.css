@@ -11,9 +11,9 @@
   max-height: 90vh;
   text-align: center;
   color: white;
-  min-width: 600px;
-  max-width: 800px;
-  min-height: 600px;
+  min-width: 700px;
+  max-width: 900px;
+  min-height: 700px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -73,7 +73,7 @@
   background: rgba(0, 0, 0, 0.2);
   border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  max-height: 400px;
+  max-height: 500px;
 }
 
 /* Messages */
