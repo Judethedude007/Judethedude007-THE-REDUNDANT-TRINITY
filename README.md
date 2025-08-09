@@ -67,7 +67,14 @@ Head to `http://localhost:5173` for the full experience.
 
 
 ![Pomodoro Timer]<img width="2489" height="1308" alt="image" src="https://github.com/user-attachments/assets/4d623d7c-7487-4257-890a-3d17c310b34e" /><img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/36b88449-c190-4850-9e11-dd65cf733872" /><img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/e3959d0f-df04-4026-9a8e-f2a043d34d28" /><img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/93929c8d-ccb4-4e45-bcc2-53442a18c895" /><img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/9af78d0b-4708-4621-bac9-adaf1ae5e360" />
+**DARK MODE**
 
+<img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/fb45d1ec-da24-4445-a469-ebdeac3eb573" /><img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/7d1bddb5-36ec-422f-a347-5eac4f806f4f" /><img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/ef1d14d6-b10d-455e-9c6e-6fd98aca5e50" />
+
+<img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/514b038c-5e88-4a12-a105-a3a21f135a24" />
+
+
+<img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/c18a2e08-fa26-497a-8ac0-0f2f60c9c696" />
 
 
 
