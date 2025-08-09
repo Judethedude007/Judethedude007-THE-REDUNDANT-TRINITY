@@ -1,0 +1,68 @@
+.rubiks-cube-container {
+    transform-style: preserve-3d;
+    perspective: 400px;
+    width: 100%;
+    height: 100%;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rubiks-cube {
+    width: 50px;
+    height: 50px;
+    transform-style: preserve-3d;
+    position: absolute;
+    left: calc(50% - 25px);
+    top: calc(50% - 25px);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.rubiks-cube .rubiks-face {
+    border: 2px solid #333;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    box-sizing: border-box;
+    background: rgb(56, 56, 56);
+}
+
+.rubiks-cube .rubiks-face.front {
+    transform: translateZ(25px) rotate(0deg);
+}
+
+.rubiks-cube .rubiks-face.back {
+    transform: translateZ(-25px) rotate(0deg);
+}
+
+.rubiks-cube .rubiks-face.top {
+    transform: rotateX(-90deg) translateY(-25px);
+    transform-origin: top center;
+}
+
+.rubiks-cube .rubiks-face.bottom {
+    transform: rotateX(90deg) translateY(25px);
+    transform-origin: bottom center;
+}
+
+.rubiks-cube .rubiks-face.left {
+    transform: rotateY(270deg) translateX(-25px);
+    transform-origin: center left;
+}
+
+.rubiks-cube .rubiks-face.right {
+    transform: rotateY(-270deg) translateX(25px);
+    transform-origin: center right;
+}

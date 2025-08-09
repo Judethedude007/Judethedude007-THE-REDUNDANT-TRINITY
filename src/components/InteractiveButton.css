@@ -1,0 +1,189 @@
+.interactive-button {
+  position: relative;
+  padding: 1rem 2rem;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  overflow: hidden;
+  min-width: 200px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.interactive-button::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  border-radius: 19px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.interactive-button::after {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: -8px;
+  bottom: -8px;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.1), transparent, rgba(255, 255, 255, 0.1));
+  border-radius: 23px;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: -2;
+}
+
+.interactive-button:focus {
+  outline: none;
+}
+
+.button-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.button-glow {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+/* Hover effects */
+.interactive-button.hovered {
+  transform: scale(1.15);
+  border-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 
+    0 15px 50px rgba(0, 0, 0, 0.3),
+    0 0 30px rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.interactive-button.hovered::before {
+  opacity: 1;
+  animation: ring-pulse 2s infinite;
+}
+
+.interactive-button.hovered::after {
+  opacity: 1;
+  transform: scale(1);
+  animation: outer-ring-pulse 2s infinite 0.5s;
+}
+
+.interactive-button.hovered .button-glow {
+  opacity: 1;
+}
+
+/* Press effects */
+.interactive-button.pressed {
+  transform: scale(1.2);
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 
+    0 20px 60px rgba(0, 0, 0, 0.4),
+    0 0 40px rgba(255, 255, 255, 0.3);
+}
+
+/* Ring animations */
+@keyframes ring-pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes outer-ring-pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.2);
+  }
+}
+
+/* Button-specific styles */
+.surprise-btn.hovered {
+  border-color: #ff6b6b;
+  box-shadow: 
+    0 15px 50px rgba(255, 107, 107, 0.4),
+    0 0 30px rgba(255, 107, 107, 0.3);
+}
+
+.surprise-btn.hovered::before {
+  background: linear-gradient(45deg, transparent, rgba(255, 107, 107, 0.4), transparent);
+}
+
+.surprise-btn.hovered::after {
+  background: linear-gradient(45deg, rgba(255, 107, 107, 0.2), transparent, rgba(255, 107, 107, 0.2));
+}
+
+.clock-btn.hovered {
+  border-color: #4ecdc4;
+  box-shadow: 
+    0 15px 50px rgba(78, 205, 196, 0.4),
+    0 0 30px rgba(78, 205, 196, 0.3);
+}
+
+.clock-btn.hovered::before {
+  background: linear-gradient(45deg, transparent, rgba(78, 205, 196, 0.4), transparent);
+}
+
+.clock-btn.hovered::after {
+  background: linear-gradient(45deg, rgba(78, 205, 196, 0.2), transparent, rgba(78, 205, 196, 0.2));
+}
+
+.unidisc-btn.hovered {
+  border-color: #45b7d1;
+  box-shadow: 
+    0 15px 50px rgba(69, 183, 209, 0.4),
+    0 0 30px rgba(69, 183, 209, 0.3);
+}
+
+.unidisc-btn.hovered::before {
+  background: linear-gradient(45deg, transparent, rgba(69, 183, 209, 0.4), transparent);
+}
+
+.unidisc-btn.hovered::after {
+  background: linear-gradient(45deg, rgba(69, 183, 209, 0.2), transparent, rgba(69, 183, 209, 0.2));
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .interactive-button {
+    min-width: 180px;
+    padding: 0.8rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .interactive-button {
+    min-width: 160px;
+    padding: 0.7rem 1.2rem;
+  }
+}

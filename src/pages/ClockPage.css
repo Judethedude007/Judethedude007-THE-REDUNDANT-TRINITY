@@ -1,0 +1,134 @@
+.digital-clock-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: #000;
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  .digital-time {
+    font-size: 8rem;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-shadow: 0 0 20px rgba(0, 255, 255, 0.5), 0 0 40px rgba(0, 255, 255, 0.5);
+    display: flex;
+    align-items: baseline;
+  }
+  
+  .time-section {
+    display: flex;
+    align-items: baseline;
+  }
+  
+  .time-digit {
+    min-width: 120px;
+    display: inline-block;
+  }
+  
+  .time-separator {
+    font-size: 6rem;
+    margin: 0 10px;
+    animation: blink 1s infinite;
+  }
+  
+  .time-ampm {
+    font-size: 3rem;
+    margin-left: 20px;
+    align-self: flex-end;
+    padding-bottom: 1.5rem;
+  }
+  
+  .digital-date {
+    font-size: 2rem;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    opacity: 0.8;
+  }
+  
+  .pomodoro-button-container {
+    margin-top: 40px;
+  }
+  
+  .pomodoro-button {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    z-index: 10;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .pomodoro-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+  
+  .pomodoro-icon {
+    margin-right: 10px;
+    font-size: 1.5rem;
+  }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+  }
+  
+  @media (max-width: 768px) {
+    .digital-time {
+      font-size: 4rem;
+    }
+    .time-digit {
+      min-width: 60px;
+    }
+    .time-separator {
+      font-size: 3rem;
+    }
+    .time-ampm {
+      font-size: 1.5rem;
+      padding-bottom: 0.8rem;
+    }
+    .digital-date {
+      font-size: 1.2rem;
+    }
+    .pomodoro-button {
+      padding: 12px 25px;
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .digital-time {
+      font-size: 2.5rem;
+      flex-direction: column;
+      align-items: center;
+    }
+    .time-section {
+      margin-bottom: 10px;
+    }
+    .time-ampm {
+      font-size: 1.2rem;
+      margin-left: 0;
+      align-self: center;
+      padding-bottom: 0;
+    }
+    .digital-date {
+      font-size: 1rem;
+    }
+  }
+  

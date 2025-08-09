@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap");
+
+.animated-title-container {
+  position: fixed;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  pointer-events: none;
+  font-size: clamp(2rem, 8vw, 6rem);
+  font-family: "Comfortaa", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  user-select: none;
+  -webkit-user-select: none;
+  width: 100%;
+  text-align: center;
+}
+
+.wrapper {
+  white-space: nowrap;
+  color: transparent;
+  pointer-events: auto;
+  display: inline-block;
+}
+
+.src-txt, .top-txt {
+  position: relative;
+}
+
+.src-txt {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.top-txt {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .animated-title-container {
+    font-size: clamp(1.5rem, 6vw, 4rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .animated-title-container {
+    font-size: clamp(1.2rem, 5vw, 3rem);
+  }
+}

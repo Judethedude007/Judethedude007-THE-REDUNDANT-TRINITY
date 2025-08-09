@@ -1,0 +1,184 @@
+/* Mischievous Close Button */
+.mischievous-close-btn {
+  width: 28px;
+  height: 28px;
+  background: linear-gradient(45deg, #ff4757, #ff3742);
+  border: 1.5px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 9999;
+  box-shadow: 
+    0 4px 15px rgba(255, 71, 87, 0.4),
+    0 0 20px rgba(255, 71, 87, 0.3);
+  transition: all 0.3s ease;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.mischievous-close-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 
+    0 6px 20px rgba(255, 71, 87, 0.6),
+    0 0 30px rgba(255, 71, 87, 0.5);
+  animation: shake 0.5s infinite;
+}
+
+.mischievous-close-btn:active {
+  transform: scale(0.9) rotate(45deg);
+}
+
+.mischievous-close-btn.running-away {
+  transform: scale(0.8) rotate(180deg);
+  animation: runAway 0.3s ease-out, wiggle 0.1s infinite;
+}
+
+.mischievous-close-btn.getting-tired {
+  filter: saturate(0.7) brightness(0.9);
+  animation: tired-pulse 2s ease-in-out infinite;
+}
+
+@keyframes tired-pulse {
+  0%, 100% { 
+    transform: scale(1);
+    filter: saturate(0.7) brightness(0.9);
+  }
+  50% { 
+    transform: scale(0.95);
+    filter: saturate(0.5) brightness(0.8);
+  }
+}
+
+@keyframes shake {
+  0%, 100% { transform: scale(1.1) translateX(0); }
+  25% { transform: scale(1.1) translateX(-2px); }
+  75% { transform: scale(1.1) translateX(2px); }
+}
+
+@keyframes runAway {
+  0% { transform: scale(1.1) rotate(0deg); }
+  50% { transform: scale(0.6) rotate(90deg); }
+  100% { transform: scale(0.8) rotate(180deg); }
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: scale(0.8) rotate(180deg) translateY(0); }
+  50% { transform: scale(0.8) rotate(180deg) translateY(-2px); }
+}
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Grid overlay animation */
+.grid-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    linear-gradient(#555 1px, transparent 1px),
+    linear-gradient(90deg, #555 1px, transparent 1px);
+  background-size: 40px 40px;
+  z-index: 1;
+  animation: pulse 4s infinite;
+  pointer-events: none;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.6; }
+}
+
+/* Main content */
+.main-content {
+  position: fixed;
+  bottom: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  text-align: center;
+  pointer-events: none;
+}
+
+.app-title {
+  font-size: clamp(2rem, 5vw, 4rem);
+  margin-bottom: 3rem;
+  background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #f7b731);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientShift 3s ease-in-out infinite;
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+}
+
+@keyframes gradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+/* Button container */
+.button-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+  flex-wrap: wrap;
+}
+
+/* Responsive design */
+@media (min-width: 768px) {
+  .button-container {
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .button-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .main-content {
+    bottom: 8%;
+  }
+}
+
+@media (max-width: 480px) {
+  .button-container {
+    gap: 0.8rem;
+  }
+  
+  .main-content {
+    bottom: 5%;
+  }
+}
