@@ -3,11 +3,28 @@ import './AIAssistant.css'
 
 // Add readMessage helper
 const readMessage = (text) => {
-  if ('speechSynthesis' in window) {
-    const utterance = new SpeechSynthesisUtterance(text);
-    window.speechSynthesis.speak(utterance);
-  } else {
+  if (!('speechSynthesis' in window)) {
     console.warn('Speech Synthesis not supported in this browser');
+    return;
+  }
+  const speak = () => {
+    const utterance = new SpeechSynthesisUtterance(text);
+    // Select preferred voice type (female English voice if available)
+    const voices = window.speechSynthesis.getVoices();
+    const preferredVoice = voices.find(v => v.name.toLowerCase().includes('zira'))
+      || voices.find(v => v.lang === 'en-US')
+      || voices[0];
+    if (preferredVoice) utterance.voice = preferredVoice;
+    window.speechSynthesis.speak(utterance);
+  };
+  // Ensure voices are loaded
+  const voices = window.speechSynthesis.getVoices();
+  if (voices.length > 0) {
+    speak();
+  } else {
+    window.speechSynthesis.onvoiceschanged = () => {
+      speak();
+    };
   }
 };
 
