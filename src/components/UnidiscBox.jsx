@@ -1,6 +1,16 @@
 import { useState, useEffect } from 'react'
 import './AIAssistant.css'
 
+// Add readMessage helper
+const readMessage = (text) => {
+  if ('speechSynthesis' in window) {
+    const utterance = new SpeechSynthesisUtterance(text);
+    window.speechSynthesis.speak(utterance);
+  } else {
+    console.warn('Speech Synthesis not supported in this browser');
+  }
+};
+
 const UnidiscBox = ({ onClose, isFullPage }) => {
   const [question, setQuestion] = useState('')
   const [messages, setMessages] = useState([])
@@ -227,14 +237,23 @@ const UnidiscBox = ({ onClose, isFullPage }) => {
                   </div>
                   <div className="message-content">
                     {message.content}
+                    {/* Add read button for AI replies */}
+                    {message.type === 'ai' && (
+                      <button
+                        className="read-btn"
+                        onClick={() => readMessage(message.content)}
+                        title="Read message aloud"
+                      >🔊 Read</button>
+                    )}
                   </div>
                 </div>
-              ))
-            )}
+              )))
+            }
             {isLoading && (
               <div className="message ai">
                 <div className="message-avatar">🤖</div>
-                <div className="message-content loading">
+                  </div>
+                )}
                   <div className="typing-indicator">
                     <span></span>
                     <span></span>
