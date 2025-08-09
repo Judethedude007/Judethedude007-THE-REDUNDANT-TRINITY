@@ -81,8 +81,10 @@ Head to `http://localhost:5173` for the full experience.
 
 *My Pomodoro module helps you reclaim your hours—set work intervals, break times, and witness animation-fueled productivity!*
 
-![UnidiscBox with AI Assistant](Add screenshot here)
-*I mix retro nostalgia and tech: a spinning vinyl player and my built-in AI assistant, ready to answer, repeat, or perform pointless voice tricks.*
+![UnidiscBox with AI Assistant]<img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/334a63a5-0aae-46ad-a303-8ba5df075783" /><img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/de004faf-5c1c-4966-9a5f-e8cabb6919a2" />
+
+
+*A REVERSE PSYCHOLOGY APP WHICH GIVES THE INFORMATION AND TEH DRIVE TO GET STUFF THAT WE ARE LOOKING FOR OUR OWN*
 
 ***
 
