@@ -9,6 +9,12 @@ const readMessage = (text) => {
   }
   const speak = () => {
     const utterance = new SpeechSynthesisUtterance(text);
+    // Exaggerate sound for repeat-question dummy response
+    if (text.includes('I answered you before')) {
+      utterance.pitch = 2;   // higher pitch
+      utterance.rate = 0.8;  // slower rate
+      utterance.volume = 1;  // full volume
+    }
     // Select preferred voice type (female English voice if available)
     const voices = window.speechSynthesis.getVoices();
     const preferredVoice = voices.find(v => v.name.toLowerCase().includes('zira'))
