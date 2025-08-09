@@ -1,3 +1,10 @@
+/* Add animated gradient background for wrapper */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 .unidisc-page-wrapper {
     display: flex;
     justify-content: center;
@@ -7,5 +14,7 @@
     padding: 20px;
     box-sizing: border-box;
     position: relative;
+    background: linear-gradient(270deg, #0d0d12, #1a1a24, #101018, #1a1a24);
+    background-size: 1000% 1000%;
+    animation: gradientBG 20s ease infinite;
   }
-  
