@@ -63,7 +63,11 @@ Head to `http://localhost:5173` for the full experience.
 <img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/5394aea5-380b-414a-9225-036465be1c93" />
 *A personal welcome: GSAP clouds float in with starry style while I set the tone for your journey.*
 
+**Relaxing Rubik's Cube**
+<img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/4e59d705-bd29-464d-8881-747d0aa06ce8" /><img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/b58f9987-fe87-49b9-a3c9-9bbc101f7d19" />
 
+
+Currently in development, I'm working on a minimalistic, relaxing Rubik's Cube experience crafted entirely with HTML, CSS, and JavaScript. Unlike the traditional cube, this version is designed with a sleek, colorless aesthetic that makes it visually soothing and impossible to solve. The lack of colors removes the conventional challenge and instead, invites users into a meditative interaction with shape and motion. This feature aims to provide a calming digital break, blending simple geometric animation with user-driven manipulation, encouraging relaxation and mindfulness through play.
 
 
 ![Pomodoro Timer]<img width="2489" height="1308" alt="image" src="https://github.com/user-attachments/assets/4d623d7c-7487-4257-890a-3d17c310b34e" /><img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/36b88449-c190-4850-9e11-dd65cf733872" /><img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/e3959d0f-df04-4026-9a8e-f2a043d34d28" /><img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/93929c8d-ccb4-4e45-bcc2-53442a18c895" /><img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/9af78d0b-4708-4621-bac9-adaf1ae5e360" />
