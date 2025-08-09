@@ -63,7 +63,15 @@ Head to `http://localhost:5173` for the full experience.
 <img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/5394aea5-380b-414a-9225-036465be1c93" />
 *A personal welcome: GSAP clouds float in with starry style while I set the tone for your journey.*
 
-![Pomodoro Timer](Add screenshot here)
+
+
+
+![Pomodoro Timer]<img width="2489" height="1308" alt="image" src="https://github.com/user-attachments/assets/4d623d7c-7487-4257-890a-3d17c310b34e" /><img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/36b88449-c190-4850-9e11-dd65cf733872" /><img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/e3959d0f-df04-4026-9a8e-f2a043d34d28" /><img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/93929c8d-ccb4-4e45-bcc2-53442a18c895" /><img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/9af78d0b-4708-4621-bac9-adaf1ae5e360" />
+
+
+
+
+
 *My Pomodoro module helps you reclaim your hours—set work intervals, break times, and witness animation-fueled productivity!*
 
 ![UnidiscBox with AI Assistant](Add screenshot here)
