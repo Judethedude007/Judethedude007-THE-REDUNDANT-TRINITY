@@ -87,41 +87,10 @@ Head to `http://localhost:5173` for the full experience.
 *A REVERSE PSYCHOLOGY APP WHICH GIVES THE INFORMATION AND TEH DRIVE TO GET STUFF THAT WE ARE LOOKING FOR OUR OWN*
 
 ***
-
-#### Diagrams
-![Workflow Diagram](Add diagram here)
-*How I guide you: Parallax landing → Interactive SPA → Timers, clocks, surprise boxes, and AI conversation… all directed by me and my vision of time well spent!*
-
-***
-
-### Hardware:
-*Mostly just for the fun of imagining physical redundancy.*
-
-#### Schematic & Circuit
-![Triple LED Circuit](Add image here)
-*A virtual circuit where three LEDs blink every Pomodoro cycle. Not connected to anything, but it sure looks cool in my imaginary lab!*
-
-#### Schematic
-*A second circuit for triple redundancy, because I like when things happen more than once—even offline.*
-
-***
-
-#### Build Photos
-![Dev Setup](Add photo here)
-*My workspace features endless coffee, overworked laptop fans, and screens full of animations.*
-
-![Coding Chaos](Add photo here)
-*How I wrangle JavaScript into doing what no one requested!*
-
-![Final Product](Add screenshot here)
-*The finished app, ready to help you enjoy (and manage) your precious minutes.*
-
-***
-
 ## Project Demo
 
 #### Video
-[Demo Video Link](https://lets-see-first-fb-project.web.app/)
+[Demo Video Link]<https://youtu.be/2I0m2GD9rDo>
 *I’ll walk you through the cloud animations, timers, AI chat, retro music module, and show you how my Pomodoro lets you conquer time—while having some fun on the way!*
 
 #### Additional Demos
