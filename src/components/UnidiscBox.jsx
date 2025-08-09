@@ -227,41 +227,45 @@ const UnidiscBox = ({ onClose, isFullPage }) => {
             {messages.length === 0 ? (
               <div className="welcome-message">
                 <div className="welcome-icon">🤖</div>
-                <p>Hello! I'm your AI assistant. Ask me any question and I'll provide detailed information about the topic and suggest related questions to explore further.</p>
+                <p>
+                  Hello! I'm your AI assistant. Ask me any question and I'll provide detailed information about the topic and suggest related questions to explore further.
+                </p>
               </div>
             ) : (
-              messages.map((message, index) => (
-                <div key={index} className={`message ${message.type}`}>
-                  <div className="message-avatar">
-                    {message.type === 'user' ? '👤' : '🤖'}
+              <>
+                {messages.map((message, index) => (
+                  <div key={index} className={`message ${message.type}`}>
+                    <div className="message-avatar">
+                      {message.type === 'user' ? '👤' : '🤖'}
+                    </div>
+                    <div className="message-content">
+                      {message.content}
+                      {message.type === 'ai' && (
+                        <button
+                          className="read-btn"
+                          onClick={() => readMessage(message.content)}
+                          title="Read message aloud"
+                        >
+                          🔊 Read
+                        </button>
+                      )}
+                    </div>
                   </div>
-                  <div className="message-content">
-                    {message.content}
-                    {/* Add read button for AI replies */}
-                    {message.type === 'ai' && (
-                      <button
-                        className="read-btn"
-                        onClick={() => readMessage(message.content)}
-                        title="Read message aloud"
-                      >🔊 Read</button>
-                    )}
-                  </div>
-                </div>
-              )))
-            }
-            {isLoading && (
-              <div className="message ai">
-                <div className="message-avatar">🤖</div>
+                ))}
+                {isLoading && (
+                  <div className="message ai">
+                    <div className="message-avatar">🤖</div>
+                    <div className="message-content">
+                      <div className="typing-indicator">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      Thinking...
+                    </div>
                   </div>
                 )}
-                  <div className="typing-indicator">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
-                  Thinking...
-                </div>
-              </div>
+              </>
             )}
           </div>
           
