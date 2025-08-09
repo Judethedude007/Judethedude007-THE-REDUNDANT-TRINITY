@@ -93,12 +93,6 @@ Head to `http://localhost:5173` for the full experience.
 [Demo Video Link]<https://youtu.be/2I0m2GD9rDo>
 *I’ll walk you through the cloud animations, timers, AI chat, retro music module, and show you how my Pomodoro lets you conquer time—while having some fun on the way!*
 
-#### Additional Demos
-- GIF of the Surprise Box launching confetti each time you’re losing track of time.
-- Clip of me (aka the AI) repeating your words in dramatic voice—the most redundant reminder of where your hours went.
-
-***
-
 ## Team Contributions
 - **Jude Thomas:**
   - Ideator, architect, and all-round maker of redundant things
@@ -110,3 +104,5 @@ Head to `http://localhost:5173` for the full experience.
 ***
 
 Made with ❤️ (and possibly way too many Pomodoro cycles) at **TinkerHub Useless Projects**
+![Static Badge](https://img.shields.io/badge/TinkerHub-24?color=%23000000&link=https%3A%2F%2Fwww.tinkerhub.org%2F)
+![Static Badge](https://img.shields.io/badge/UselessProjects--25-25?link=https%3A%2F%2Fwww.tinkerhub.org%2Fevents%2FQ2Q1TQKX6Q%2FUseless%2520Projects)
